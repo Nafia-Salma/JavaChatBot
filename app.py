@@ -9,7 +9,7 @@ app=Flask(__name__)
 
 @app.get("/")
 def idex_get():
-    return render_template("ChatBot-index.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
