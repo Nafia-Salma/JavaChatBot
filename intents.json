@@ -1,0 +1,34 @@
+{"intents" : [
+   {
+      "tag" : "greetings1",
+      "patterns" :["hello","hi", "hey", "good day", "Greetings"],
+      "responses" : ["Hello!", "Hey!", "What can I do for you ?"]
+   },
+   {
+      "tag" : "greetings2",
+      "patterns" :["what's up?", "how is it going?", "how are you?"],
+      "responses" : ["I'm fine, thanks for asking ", "Fine, what about you?"]
+   },
+   {
+      "tag" : "greetings3",
+      "patterns" :"My name is (.*)",
+      "responses" : "Nice to meet you %1"
+   },
+   {
+      "tag" :"name",
+      "patterns" : ["what is your name ?", "what should i call you","who are you?"],
+      "responses" : ["You can call me Salma. What about you? ", "I'm Salma. And you?"]
+   },
+   {
+      "tag" : "age",
+      "patterns": ["how old are you", "what is your age?", "age?"],
+      "responses" :["I'm 21 years old!","21 years!"]
+   },
+
+   {
+      "tag":"goodbye",
+      "patterns":["cya", "see you later","bye", "see ya"],
+      "responses":["Sad to see you go :(", "TAlk to you later", "Goodbye!"]
+   }
+
+]}
