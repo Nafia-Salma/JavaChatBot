@@ -55,10 +55,10 @@ def get_response(intents_list, intents_json):
 
 print("\n\nGO GO!!! the Bot is running")
 
-while True:
-    message = input("You :")
-    ints = predict_class(message)
-    res = get_response(ints, intents)
-    print("ChatBot: ",res, "\n")
-
+def chat():
+    while True:
+        message = input("You :")
+        ints = predict_class(message)
+        res = get_response(ints, intents)
+        print("ChatBot: ",res, "\n")
 
