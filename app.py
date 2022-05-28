@@ -1,15 +1,13 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 import tensorflow as tf
 
 
 from chatbot import chat
 
 app=Flask(__name__)
+CORS(app)
 
-
-@app.get("/")
-def idex_get():
-    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
