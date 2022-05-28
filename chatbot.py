@@ -54,11 +54,19 @@ def get_response(intents_list, intents_json):
     return result
 
 print("\n\nGO GO!!! the Bot is running")
+def chat(message):
+    ints = predict_class(message)
+    res = get_response(ints, intents)
+    return res
 
-def chat():
+if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
     while True:
-        message = input("You :")
-        ints = predict_class(message)
-        res = get_response(ints, intents)
-        print("ChatBot: ",res, "\n")
+        # sentence = "do you use credit cards?"
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+        resp = chat(sentence)
+        print(resp)
 
+#chat()
